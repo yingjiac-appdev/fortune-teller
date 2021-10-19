@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2021-fortune-teller@sha256:26406a875c0b9f8d80ff2461c1f2c2d9058c4a4e61bd163974782c124c4899c8
+image: jelaniwoods/appdev2021-fortune-teller@sha256:7718dcfb603e04724e88176441a1395773798b4adddf91821f9a7a5accb5d9da
 
 tasks:
   - command: bundle install
@@ -11,5 +11,4 @@ vscode:
   extensions:
     - shd101wyy.markdown-preview-enhanced
     - wingrunr21.vscode-ruby
-    - mbessey.vscode-rufo
     - aliariff.vscode-erb-beautify
