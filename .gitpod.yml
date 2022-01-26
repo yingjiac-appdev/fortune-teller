@@ -1,14 +1,16 @@
-image: jelaniwoods/appdev2021-fortune-teller@sha256:7718dcfb603e04724e88176441a1395773798b4adddf91821f9a7a5accb5d9da
+image: patrickmckernin/fortunetellerw22
 
 tasks:
-  - command: bundle install
   - init: bin/setup
 ports:
   - port: 3000
     onOpen: open-preview
+  - port: 9515
+    onOpen: ignore
+
 
 vscode:
   extensions:
-    - shd101wyy.markdown-preview-enhanced
-    - wingrunr21.vscode-ruby
+    - vortizhe.simple-ruby-erb
+    - mbessey.vscode-rufo
     - aliariff.vscode-erb-beautify
