@@ -109,6 +109,12 @@ RUN sudo apt install -y libpq-dev psmisc lsof expect
 # Install heroku-cli
 RUN /bin/bash -l -c "curl https://cli-assets.heroku.com/install.sh | sh"
 
+# Install JS Dependencies
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - \
+    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list \
+    && sudo apt-get update && sudo apt-get install -y nodejs yarn
+
+
 # Git global configuration
 RUN git config --global push.default upstream \
     && git config --global merge.ff only \
