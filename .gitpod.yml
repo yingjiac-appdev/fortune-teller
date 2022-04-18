@@ -1,6 +1,9 @@
 image: patrickmckernin/fortunetellerw22
 
 tasks:
+  - before: |
+      mv /base-rails/gems vendor/bundle
+      bundle config set --local path 'vendor/bundle'
   - init: bin/setup
 ports:
   - port: 3000
