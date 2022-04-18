@@ -2,7 +2,7 @@ image: jelaniwoods/appdev2022-fortune-teller-wip
 
 tasks:
   - before: |
-      mv /base-rails/gems vendor/bundle
+      mv /base-rails/gems/ruby vendor/bundle
       bundle config set --local path 'vendor/bundle'
   - init: bin/setup
 ports:
