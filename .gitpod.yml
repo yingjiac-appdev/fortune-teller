@@ -5,6 +5,7 @@ tasks:
       cp -r /base-rails/gems/ruby vendor/bundle
       bundle config set --local path 'vendor/bundle'
   - init: |
+      bundle install
       rails db:create db:migrate
       rails db:seed
 ports:
