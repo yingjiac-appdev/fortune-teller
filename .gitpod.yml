@@ -1,4 +1,4 @@
-image: jelaniwoods/appdev2022-fortune-teller-wip
+image: jelaniwoods/appdev2022-fortune-teller
 
 tasks:
   - before: |
