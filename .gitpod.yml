@@ -5,9 +5,8 @@ tasks:
       cp -r /base-rails/gems/ruby vendor/bundle
       bundle config set --local path 'vendor/bundle'
   - init: |
-      ls vendor/bundle
-      echo "Fetching dependencies..."
-      bin/setup
+      rails db:create db:migrate
+      rails db:seed
 ports:
   - port: 3000
     onOpen: open-preview
